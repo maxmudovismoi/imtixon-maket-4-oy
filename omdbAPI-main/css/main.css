@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    font-family: sans-serif;
+    min-height: 100vh;
+    font-size: 18px;
+    background-image: linear-gradient(to right top, #051937, #002139, #002736, #002c2f, #053028);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.main {
+    padding-top: 100px;
+}
+
+.bookmark {
+    position: fixed;
+    right: -500px;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
+    background-color: #000000 !important;
+    overflow: auto;
+    transition: all 0.5s linear;
+}
+
+.active {
+    right: 0;
+}
+
+.bookmark-clouse {
+    color: #fff;
+}
+
+.bookmark-list {
+    overflow: auto;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right top, #051937, #002139, #002736, #002c2f, #053028);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-img {
+    width: 100px;
+    height: 50;
+}
+.book-item {
+    position: relative;
+    padding: 0 10px;
+    color:  white; 
+}
+
+.nav-link {
+    color: #fff;
+    transition: all 0.4s linear;
+}
+
+.nav-link:hover{
+    color: rgb(65, 101, 124);
+}
+
+.bookmarkLength {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-style: 20px;
+}
+
+.heart-btn {
+    background-color: transparent !important;
+}
+
+.heart {
+    width: 25px;
+    background-color: transparent;
+    color: rgba(250, 6, 6, 0.547);
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.heart:hover {
+    color: rgb(250, 6, 6);
+    transform: scale(1.5);
+}
+
+.active {
+    color: rgba(250, 6, 6, 1);
+}
+
+
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
